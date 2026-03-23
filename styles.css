@@ -881,13 +881,13 @@ footer span { color: var(--accent); }
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
   nav { padding: 16px 24px; }
-  .nav-links { display: none; }
+  .nav-links { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
   section { padding: 80px 24px; max-width: 100%; }
   section#home { min-height: 80vh; padding: 60px 24px; }
   .hero-background { display: none; }
   .hero-overlay { background: linear-gradient(135deg, rgba(249, 249, 251, 0.98) 0%, rgba(249, 249, 251, 0.95) 100%); }
   .hero-content { padding: 40px 0; }
-  .scroll-indicator { display: none; }
+  .scroll-indicator { display: flex; }
   .home-name { font-size: clamp(2.2rem, 5vw, 3rem); }
   .about-grid { grid-template-columns: 1fr; }
   .about-img-wrap { max-width: 280px; margin: 0 auto; }

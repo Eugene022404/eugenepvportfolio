@@ -9,7 +9,7 @@
   --accent-glow: rgba(14, 43, 93, 0.2);
   --text: #1a1f3a;
   --muted: #5a6b7f;
-  --white: #000000;
+  --white: #ffffff;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

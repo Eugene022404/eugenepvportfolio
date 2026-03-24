@@ -1,14 +1,14 @@
 :root {
-  --bg: #f8f9fb;
-  --bg2: #f0f2f7;
-  --bg3: #e8ecf3;
+  --bg: #f0f0f0;
+  --bg2: #e8e8e8;
+  --bg3: #dcdcdc;
   --card: #ffffff;
-  --card-border: rgba(14, 43, 93, 0.1);
-  --accent: #0e2b5d;
-  --accent2: #1a5490;
-  --accent-glow: rgba(14, 43, 93, 0.2);
-  --text: #1a1f3a;
-  --muted: #5a6b7f;
+  --card-border: rgba(0, 0, 0, 0.1);
+  --accent: #2563EB;
+  --accent2: #1e4ba8;
+  --accent-glow: rgba(37, 99, 235, 0.2);
+  --text: #1a1a1a;
+  --muted: #666666;
   --white: #ffffff;
 }
 
@@ -42,10 +42,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 18px 60px;
-  background: rgba(249, 249, 251, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--card-border);
-  box-shadow: 0 2px 12px rgba(45, 45, 61, 0.05);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
 }
 
 .nav-logo {
@@ -93,7 +93,7 @@ section {
   position: relative;
   z-index: 1;
   padding: 120px 60px;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -119,7 +119,7 @@ section#home {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(248, 249, 251, 0.92) 0%, rgba(248, 249, 251, 0.85) 50%, rgba(14, 43, 93, 0.08) 100%);
+  background: linear-gradient(135deg, rgba(248, 249, 251, 0.92) 0%, rgba(248, 249, 251, 0.85) 50%, rgba(230, 230, 230, 0.8) 100%);
   backdrop-filter: blur(2px);
 }
 
@@ -286,7 +286,7 @@ section#home {
 .btn-primary:hover {
   background: var(--accent2);
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(139, 127, 217, 0.35);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.3);
 }
 
 .btn-outline {
@@ -537,7 +537,7 @@ section#home {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: rgba(107, 92, 206, 0.1);
+  background: rgba(37, 99, 235, 0.1);
   border: 2px solid var(--accent);
   display: flex;
   align-items: center;
@@ -646,7 +646,7 @@ section#home {
 
 .project-card:hover img {
   transform: scale(1.02);
-  box-shadow: 0 12px 32px rgba(107, 92, 206, 0.2);
+  box-shadow: 0 12px 32px var(--accent-glow);
 }
 
 .project-thumb {
@@ -768,13 +768,13 @@ section#home {
 }
 
 .cert-item:last-child { border-bottom: none; }
-.cert-item:hover { background: rgba(107, 92, 206, 0.04); }
+.cert-item:hover { background: rgba(37, 99, 235, 0.04); }
 
 .cert-icon {
   width: 48px; height: 48px;
   border-radius: 12px;
-  background: rgba(107, 92, 206, 0.12);
-  border: 2px solid rgba(107, 92, 206, 0.2);
+  background: rgba(37, 99, 235, 0.12);
+  border: 2px solid rgba(37, 99, 235, 0.2);
   display: flex; align-items: center; justify-content: center;
   font-size: 1rem;
   color: var(--accent);
@@ -791,7 +791,7 @@ section#home {
 .cert-source {
   font-size: 0.8rem;
   color: var(--accent);
-  background: rgba(107, 92, 206, 0.12);
+  background: rgba(37, 99, 235, 0.12);
   padding: 3px 12px;
   border-radius: 999px;
   margin-left: 10px;

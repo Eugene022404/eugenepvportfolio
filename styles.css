@@ -608,6 +608,34 @@ section#home {
 }
 
 /* ─── PROJECTS ─── */
+.privacy-notice {
+  background: rgba(0, 200, 255, 0.1);
+  border: 2px solid rgba(0, 200, 255, 0.3);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 40px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.privacy-notice i {
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.privacy-label {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -615,19 +643,22 @@ section#home {
 }
 
 .project-card {
-  background: transparent;
-  border: none;
-  border-top: 3px solid var(--accent);
-  border-radius: 0;
-  overflow: visible;
+  background: rgba(0, 200, 255, 0.08);
+  border: 2px solid rgba(0, 200, 255, 0.3);
+  border-radius: 16px;
+  overflow: hidden;
   transition: all 0.25s;
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 200, 255, 0.15);
 }
 
 .project-card:hover {
-  border-top-color: var(--accent2);
+  background: rgba(0, 200, 255, 0.12);
+  border-color: rgba(0, 200, 255, 0.5);
+  box-shadow: 0 12px 32px rgba(0, 200, 255, 0.25);
 }
 
 .project-card:hover .project-title {
@@ -641,6 +672,10 @@ section#home {
   display: block;
   border-radius: 12px;
   margin-bottom: 24px;
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-top: -24px;
+  width: calc(100% + 48px);
   transition: all 0.25s;
 }
 
@@ -670,6 +705,24 @@ section#home {
 }
 
 .project-body { padding: 0; flex-grow: 1; display: flex; flex-direction: column; }
+
+.project-access {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 200, 255, 0.2);
+  font-size: 0.8rem;
+  color: rgba(0, 200, 255, 0.6);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.project-access i {
+  font-size: 0.9rem;
+}
 
 .project-title {
   font-family: 'Rubik', sans-serif;
